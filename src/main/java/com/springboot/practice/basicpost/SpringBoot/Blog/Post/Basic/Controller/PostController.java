@@ -17,7 +17,7 @@ public class PostController {
     }
 
 
-    @PostMapping("/api/create")                     //      http://localhost:8080/api/create
+    @PostMapping("/api/create")                     //  link:     http://localhost:8080/api/create
     public ResponseEntity<PostDto> create( @RequestBody PostDto createRequest) {
         return  new ResponseEntity<>(postService.createPost(createRequest), HttpStatus.CREATED);
     }
